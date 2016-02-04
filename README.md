@@ -21,6 +21,16 @@ This is a helper application used to collect RGB, depth images, as well as landm
 #### tracking - `tracking_modeling_online`, `tracking_modeling_offline`
 This is the main tracking application.
 
+The required console arguments are the following:
+* -dataset_dir -> path to the dataset captured using the *openni_nite_acquisition* - saved by default in the *output* folder
+* -fbx -> path to the neutral average body with an integrated skeleton, provided in *data/skeleton.fbx*
+* -bs_dir -> path to the directory containing the blendshapes for modeling the body shape. Two such sets of blendshapes are provided in *data/*
+* -good_points -> path to a text file containing a list of indices for the vertices to be used in the registration and modeling process. *data/indices_* 
+* -pca -> path to a pose PCA model. We provide an example in *data/motion.pca*
+* -out_dir -> path to the folder where to place the output files.
+
+
+**NOTE** The skeleton, neutral body mesh, and the blendshapes have been created by using the [MakeHuman Project](org). In addition to the licencing terms of the code in this repository, please respect their licensing rules too.
 
 #### Generate data for rendering - `process_results`
 Generate mesh sequences from the tracking results.
