@@ -30,7 +30,7 @@ The required console arguments are the following:
 * -out_dir -> path to the folder where to place the output files.
 
 
-**NOTE** The skeleton, neutral body mesh, and the blendshapes have been created by using the [MakeHuman Project](org). In addition to the licencing terms of the code in this repository, please respect their licensing rules too.
+**NOTE** The skeleton, neutral body mesh, and the blendshapes have been created by using the [MakeHuman Project](http://www.makehuman.org/). In addition to the licencing terms of the code in this repository, please respect their licensing rules too.
 
 #### Generate data for rendering - `process_results`
 Generate mesh sequences from the tracking results.
